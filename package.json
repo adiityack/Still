@@ -1,0 +1,46 @@
+{
+  "name": "still",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "private": true,
+  "expo": {
+    "autolinking": {
+      "nativeModulesDir": "./modules"
+    }
+  },
+  "engines": {
+    "node": ">=24.12.0"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~57.0.27",
+    "expo-constants": "~57.0.21",
+    "expo-dev-client": "~57.0.19",
+    "expo-intent-launcher": "~57.0.1",
+    "expo-linking": "~57.0.12",
+    "expo-router": "~57.0.25",
+    "expo-status-bar": "~57.0.1",
+    "firebase": "^13.0.0",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "start:tunnel": "expo start --tunnel",
+    "android": "expo run:android",
+    "android:device": "expo run:android --device",
+    "ios": "expo run:ios",
+    "ios:device": "expo run:ios --device",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "functions:build": "npm --prefix functions run build",
+    "functions:serve": "npm --prefix functions run serve",
+    "emulators": "firebase emulators:start"
+  }
+}
